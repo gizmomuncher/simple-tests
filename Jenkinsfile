@@ -10,27 +10,29 @@ node {
    // **       in the global configuration.
    def mvnHome = tool 'M3'
    // Mark the code build 'stage'....
-   stage 'Build'
+   
+   
+   //stage 'Build'
    // Run the maven build
-   bat "${mvnHome}/bin/mvn clean test"
+   //bat "${mvnHome}/bin/mvn clean test"
    
-   stage('Results') 
-   junit '**/target/surefire-reports/TEST-*.xml'
-   archive 'target/*.jar'
+   //stage('Results') 
+   //junit '**/target/surefire-reports/TEST-*.xml'
+   //archive 'target/*.jar'
    
    
    
-    //try{
-	//	  stage('Build') {
-	//		 bat "${mvnHome}/bin/mvn clean test"
-	//	  }
-	//	   }catch(err){
-	//		   junit '**/target/surefire-reports/TEST-*.xml'
-	//	  stage('Results') {
-	//		  junit '**/target/surefire-reports/TEST-*.xml'
-	//		  archive 'target/*.jar'
-    // }
-	//}
+    try{
+		  stage'Build' {
+			 bat "${mvnHome}/bin/mvn clean test"
+		  }
+		   }catch(err){
+			   junit '**/target/surefire-reports/TEST-*.xml'
+		  stage 'Results' {
+			  junit '**/target/surefire-reports/TEST-*.xml'
+			  archive 'target/*.jar'
+     }
+	}
    
 
    

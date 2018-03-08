@@ -23,12 +23,12 @@ node {
    
    
     try{
-		  stage'Build' {
+		  stage ('Build') {
 			 bat "${mvnHome}/bin/mvn clean test"
 		  }
 		   }catch(err){
 			   junit '**/target/surefire-reports/TEST-*.xml'
-		  stage 'Results' {
+		  stage ('Results') {
 			  junit '**/target/surefire-reports/TEST-*.xml'
 			  archive 'target/*.jar'
      }

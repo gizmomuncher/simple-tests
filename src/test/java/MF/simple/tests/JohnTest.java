@@ -20,7 +20,7 @@ public class JohnTest extends TestCase
         super( xss );
         }
    
-   public xss()
+   public void xss()
    {
     JohnTest("<img src=x onerror=alert()>");
     }

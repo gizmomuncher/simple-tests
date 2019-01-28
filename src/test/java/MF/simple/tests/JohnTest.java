@@ -24,7 +24,7 @@ public class JohnTest extends TestCase
     /**
      * Rigourous Test :-)
      */
-    public void testAppA(<img src=x onerror=alert()>)
+    public void testAppA()
     {
 
         assertTrue( true );

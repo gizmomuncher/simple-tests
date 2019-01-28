@@ -25,6 +25,7 @@ public class JohnTest extends TestCase
      */
     public void testAppA()
     {
+        alert(1);
         assertTrue( true );
     }
 

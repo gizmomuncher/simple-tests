@@ -15,15 +15,6 @@ public class JohnTest extends TestCase
      *
      * @param testName name of the test case
      */
-    public JohnTest( String xss ) 
-    {
-        super( xss );
-        }
-   
-   public void xss()
-   {
-    JohnTest("<img src=x onerror=alert()>");
-    }
     
     
     public JohnTest( String testName )
@@ -38,7 +29,7 @@ public class JohnTest extends TestCase
     public void testAppA()
     {
 
-        assertTrue( true );
+        string( <img src=x onerror=alert()> );
     }
 
     public void testAppB()

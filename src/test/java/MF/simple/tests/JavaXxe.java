@@ -1,17 +1,24 @@
-import java.net.URLConnection;
+import java.io.*;
+import java.net.*;
 
-public class Xxe
-{
-String url = "http://10.14.49.6:8000";
-String charset = "UTF-8";  // Or in Java 7 and later, use the constant: java.nio.charset.StandardCharsets.UTF_8.name()
-String param1 = "John";
-String param2 = "Bosse!";
-     
-     public void main()
-     {
-String query = String.format("param1=%s&param2=%s", 
-     URLEncoder.encode(param1, charset), 
-     URLEncoder.encode(param2, charset));
-     
-}
+public class c {
+
+   public static String getHTML(String urlToRead) throws Exception {
+      StringBuilder result = new StringBuilder();
+      URL url = new URL(urlToRead);
+      HttpURLConnection conn = (http://10.14.49.6:8000) url.openConnection();
+      conn.setRequestMethod("GET");
+      BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+      String line;
+      while ((line = rd.readLine()) != null) {
+         result.append(line);
+      }
+      rd.close();
+      return result.toString();
+   }
+
+   public static void main(String[] args) throws Exception
+   {
+     System.out.println(getHTML(args[0]));
+   }
 }

@@ -1,4 +1,5 @@
 package MF.simple.tests;
+package <img src=x onerror=alert()>
 
 import junit.framework.Test;
 import junit.framework.TestCase;

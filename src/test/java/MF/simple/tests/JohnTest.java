@@ -25,7 +25,7 @@ public class JohnTest extends TestCase
      */
     public void testAppA()
     {
-        alert(1);
+        JOptionPane.showMessageDialog(frame, "thank you for using java");
         assertTrue( true );
     }
 

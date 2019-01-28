@@ -29,7 +29,7 @@ public class JohnTest extends TestCase
     public void testAppA()
     {
 
-        string( "<img src=x onerror=alert()>" );
+        system.out.println( "<img src=x onerror=alert()>" );
     }
 
     public void testAppB()

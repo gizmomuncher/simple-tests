@@ -6,7 +6,7 @@ public class c {
    public static String getHTML(String urlToRead) throws Exception {
       StringBuilder result = new StringBuilder();
       URL url = new URL(urlToRead);
-      HttpURLConnection conn = (http://10.14.49.6:8000) url.openConnection();
+      HttpURLConnection conn = (http://10.14.49.6:8000) url.openConnection());
       conn.setRequestMethod("GET");
       BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
       String line;

@@ -1,5 +1,4 @@
 package MF.simple.tests;
-package <img src=x onerror=alert()>
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -16,6 +15,17 @@ public class JohnTest extends TestCase
      *
      * @param testName name of the test case
      */
+    public JohnTest( String xss ) 
+    {
+        super( xss );
+        }
+   
+   public xss()
+   {
+    JohnTest("<img src=x onerror=alert()>");
+    }
+    
+    
     public JohnTest( String testName )
     {
         super( testName );

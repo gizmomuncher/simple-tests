@@ -8,14 +8,14 @@ import junit.framework.TestSuite;
  * Unit test for simple App.
  */
 
-public class JohnTest extends TestCase
+public class John<>Test extends TestCase
 {
     /**
      * Create the test case
      *
      * @param testName name of the test case
      */
-    public JohnTest( String testName )
+    public John<>Test( String testName )
     {
         super( testName );
     }

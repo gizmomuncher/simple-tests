@@ -8,6 +8,12 @@ import junit.framework.TestSuite;
  * Unit test for simple App.
  */
 public class JohnTest extends TestCase
+//custom title, custom icon
+JOptionPane.showMessageDialog(frame,
+    "Now a code is runing",
+    "XSS dialog",
+    JOptionPane.INFORMATION_MESSAGE,
+    icon);
 {
     /**
      * Create the test case
@@ -23,7 +29,7 @@ public class JohnTest extends TestCase
     /**
      * Rigourous Test :-)
      */
-    public void testAppA<img src=x onerror=alert()>()
+    public void testAppA()
     {
         assertTrue( true );
     }

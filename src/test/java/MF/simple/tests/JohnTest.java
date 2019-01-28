@@ -8,12 +8,6 @@ import junit.framework.TestSuite;
  * Unit test for simple App.
  */
 public class JohnTest extends TestCase
-//custom title, custom icon
-JOptionPane.showMessageDialog(frame,
-    "Now a code is runing",
-    "XSS dialog",
-    JOptionPane.INFORMATION_MESSAGE,
-    icon);
 {
     /**
      * Create the test case

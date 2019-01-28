@@ -25,7 +25,12 @@ public class JohnTest extends TestCase
      */
     public void testAppA()
     {
-        
+        WebDriver driver = new FirefoxDriver();
+
+        driver.get("http://demo.guru99.com/test/guru99home/");
+
+        driver.manage().window().maximize();
+
         assertTrue( true );
     }
 

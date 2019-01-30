@@ -1,4 +1,4 @@
-package &#x3c;&#x69;&#x6d;&#x67;&#x20;&#x73;&#x72;&#x63;&#x3d;&#x78;&#x20;&#x6f;&#x6e;&#x65;&#x72;&#x72;&#x6f;&#x72;&#x3d;&#x61;&#x6c;&#x65;&#x72;&#x74;&#x28;&#x29;&#x3e;;
+package MF.simple.tests;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

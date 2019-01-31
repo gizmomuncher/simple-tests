@@ -24,50 +24,7 @@ public class App2Test extends TestCase
     {
         super( testName );
     }
-
-
-
-    public void testSendGet()
-    {
-        try {
-            sendGet();
-        } catch (Exception e) {
-            Assert.fail(e.getMessage());
-        }
-    }
-
-
-
-
-    // HTTP GET request
-       private void sendGet() throws Exception {
-
-        String url = "http://10.14.49.6:8000";
-
-        URL obj = new URL(url);
-        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-
-        // optional default is GET
-        con.setRequestMethod("GET");
-
-        //add request header
-        con.setRequestProperty("User-Agent", USER_AGENT);
-
-        int responseCode = con.getResponseCode();
-        System.out.println("\nSending 'GET' request to URL : " + url);
-        System.out.println("Response Code : " + responseCode);
-
-        BufferedReader in = new BufferedReader(
-                new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer response = new StringBuffer();
-
-        in.close();
-    }
-} 
-
-// HTTP POST request
-	private void sendPost() throws Exception {
+private void sendPost() throws Exception {
 
 		String url = "http://myd-vma00736.swinfra.net:9200/_shutdown";
 		URL obj = new URL(url);
@@ -75,7 +32,7 @@ public class App2Test extends TestCase
 
 		//add reuqest header
 		con.setRequestMethod("POST");
-		con.setRequestProperty("User-Agent", USER_AGENT);
+		con.setRequestProperty("User-Agent", Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0);
 		con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 
 		String urlParameters = "sn=C02G8416DRJM&cn=&locale=&caller=&num=12345";
@@ -106,5 +63,48 @@ public class App2Test extends TestCase
 		System.out.println(response.toString());
 
 	}
+
+
+    public void testSendGet()
+    {
+        try {
+            sendGet();
+        } catch (Exception e) {
+            Assert.fail(e.getMessage());
+        }
+    }
+
+
+/*
+
+    // HTTP GET request
+       private void sendGet() throws Exception {
+
+        String url = "http://10.14.49.6:8000";
+
+        URL obj = new URL(url);
+        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+
+        // optional default is GET
+        con.setRequestMethod("GET");
+
+        //add request header
+        con.setRequestProperty("User-Agent", USER_AGENT);
+
+        int responseCode = con.getResponseCode();
+        System.out.println("\nSending 'GET' request to URL : " + url);
+        System.out.println("Response Code : " + responseCode);
+
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(con.getInputStream()));
+        String inputLine;
+        StringBuffer response = new StringBuffer();
+
+        in.close();
+    }
+} 
+*/
+// HTTP POST request
+	
 
 }

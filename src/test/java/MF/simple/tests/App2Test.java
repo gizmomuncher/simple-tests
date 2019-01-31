@@ -32,7 +32,7 @@ private void sendPost() throws Exception {
 
 		//add reuqest header
 		con.setRequestMethod("POST");
-		con.setRequestProperty("User-Agent", Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0);
+		con.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0");
 		con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 
 		String urlParameters = "sn=C02G8416DRJM&cn=&locale=&caller=&num=12345";

@@ -40,7 +40,7 @@ public class App2Test extends TestCase
 
 
     // HTTP GET request
- /*   private void sendGet() throws Exception {
+       private void sendGet() throws Exception {
 
         String url = "http://10.14.49.6:8000";
 
@@ -64,7 +64,7 @@ public class App2Test extends TestCase
 
         in.close();
     }
-} */
+} 
 
 // HTTP POST request
 	private void sendPost() throws Exception {
